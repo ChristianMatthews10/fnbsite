@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John & Jane's Wedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#details">Wedding Details</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>John & Jane</h1>
+            <p class="date">Save the Date: October 20, 2023</p>
+            <a href="#rsvp" class="btn">RSVP Now</a>
+        </div>
+    </section>
+
+    <section id="story" class="love-story">
+        <h2>Our Love Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed urna eu mi ultricies malesuada.</p>
+    </section>
+
+    <section id="details" class="wedding-details">
+        <h2>Wedding Details</h2>
+        <div class="details-card">
+            <h3>Ceremony</h3>
+            <p>Date: October 20, 2023</p>
+            <p>Time: 3:00 PM</p>
+            <p>Location: St. James Chapel</p>
+        </div>
+        <div class="details-card">
+            <h3>Reception</h3>
+            <p>Date: October 20, 2023</p>
+            <p>Time: 6:00 PM</p>
+            <p>Location: Grand Ballroom</p>
+        </div>
+    </section>
+
+    <section id="rsvp" class="rsvp-form">
+        <h2>RSVP</h2>
+        <form action="submit_rsvp.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            <button type="submit" class="btn">Submit RSVP</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 John & Jane's Wedding</p>
+    </footer>
+</body>
+</html>
